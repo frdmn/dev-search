@@ -9,7 +9,7 @@ I built this script because my development folder, that contains all my dev proj
 # Installation
 
     git clone git://github.com/frdmn/dev-sh.git /usr/src/dev-sh
-    ln -s /usr/src/dev-sh/dev.sh /usr/local/bin/dev.sh
+    echo ". /usr/src/dev-sh/dev.sh" >> ~/.bashrc
 
 # Usage
 
