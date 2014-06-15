@@ -24,7 +24,7 @@ if [ ${#} -ne 0 ]; then
 		projectscount=$(echo "${results}" | wc -l | tr -d ' ')
 	fi
 
-# Abbort if projects count is 0
+	# Check project counts
 	if [[ ${projectscount} == "0" ]]; then
 		echo "Error: Couldn't find any project results for in \"${*}\""
 		exit 1
@@ -45,7 +45,7 @@ if [ ${#} -ne 0 ]; then
 # No arguments => display projects
 else
 	# Store projects in variable for later use
-	projects=$(ls -l ${projectspath} | tail -n +4 | awk '{ print $9" "$10" "$11 }')
+	projects=$(ls -l ${projectspath} | tail -n +2 | awk '{ print $9" "$10" "$11 }')
 
 	# Check if variable is not empty
 	if [[ $projects == "" ]]; then
@@ -57,7 +57,7 @@ else
 		projectscount=$(echo "${projects}" | wc -l | tr -d ' ')
 	fi
 
-	# Abbort if projects count is 0
+	# Check project counts
 	if [[ ${projectscount} == "0" ]]; then
 		echo "Error: Couldn't find any projects in \"${projectspath}\""
 		exit 1
