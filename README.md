@@ -36,3 +36,8 @@ And if there are multiple results, you'll get a list of those:
     > dev projectB
     Info: Found 6 result while searching for "project":
     03_projectB_one  04_projectB_two  05_projectB_three  06_projectB_four  07_projectB_five  08_projectB_six
+
+# Todo
+
+- [ ] Autocomplete
+- [ ] Support folders with whitespaces
