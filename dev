@@ -1,7 +1,6 @@
 #/bin/bash
 
-projectspath="/Users/jfr/Dropbox/Share/Development"
-#projectspath="/tmp/asdasd"
+projectspath="/Users/username/Development"
 
 # check if foler exists
 if [ ! -d ${projectspath} ]; then
