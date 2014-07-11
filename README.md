@@ -9,7 +9,13 @@ I built this script because my development folder, that contains all my dev proj
 # Installation
 
     git clone git://github.com/frdmn/dev-sh.git /usr/src/dev-sh
+
+    # if you use Bash shell
+    echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.bashrc
     echo ". /usr/src/dev-sh/dev.sh" >> ~/.bashrc
+    # or if you use ZSH
+    echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.zshrc
+    echo ". /usr/src/dev-sh/dev.sh" >> ~/.zshrc
 
 # Usage
 
