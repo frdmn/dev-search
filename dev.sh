@@ -71,6 +71,7 @@ function dev(){
 	fi
 }
 
+# Bash completion
 _dev()
 {
     local projects
