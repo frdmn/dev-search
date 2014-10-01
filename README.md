@@ -8,14 +8,14 @@ I built this script because my development folder, that contains all my dev proj
 
 # Installation
 
-    git clone git://github.com/frdmn/dev-sh.git /usr/src/dev-sh
+    git clone git://github.com/frdmn/dev-sh.git /usr/local/src/dev-sh
 
     # if you use Bash shell
     echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.bashrc
-    echo ". /usr/src/dev-sh/dev.sh" >> ~/.bashrc
+    echo ". /usr/local/src/dev-sh/dev.sh" >> ~/.bashrc
     # or if you use ZSH
     echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.zshrc
-    echo ". /usr/src/dev-sh/dev.sh" >> ~/.zshrc
+    echo ". /usr/local/src/dev-sh/dev.sh" >> ~/.zshrc
 
 # Usage
 
@@ -33,7 +33,7 @@ If there is only one search result, you'll automatically change into that projec
 
     > dev 01
     Info: Only one result found while searching for "01". cd into "01_projectA_one"...
-    
+
     > pwd
     /Users/username/Development/01_projectA_one
 
