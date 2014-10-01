@@ -70,3 +70,13 @@ function dev(){
 		fi
 	fi
 }
+
+_dev()
+{
+    local projects
+    cur=${COMP_WORDS[COMP_CWORD]}
+    local projects="$(for x in `find ${devsearch_projectspath} -name "*${cur}*" -not -path '*/\.*' -type d -maxdepth 1 -exec basename {} \; | grep -v "${devsearch_projectspath##*/}"`; do echo ${x}; done)"
+    COMPREPLY=( $( compgen -W "${projects}" -- ${cur} ) )
+    return 0
+}
+complete -F _dev dev
