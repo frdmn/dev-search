@@ -45,5 +45,4 @@ And if there are multiple results, you'll get a list of those:
 
 # Todo
 
-- [ ] Autocomplete
 - [ ] Support folders with whitespaces
