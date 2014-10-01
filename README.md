@@ -48,7 +48,3 @@ And if there are multiple results, you'll get a list of those:
 To make this work in ZSH you need to add the following configuration in your `~/.zshrc`:
 
     autoload bashcompinit && bashcompinit
-    
-# Todo
-
-- [ ] Support folders with whitespaces
