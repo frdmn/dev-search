@@ -43,12 +43,12 @@ And if there are multiple results, you'll get a list of those:
     Info: Found 6 result while searching for "project":
     03_projectB_one  04_projectB_two  05_projectB_three  06_projectB_four  07_projectB_five  08_projectB_six
 
-### Bash/ZSH completion
+### Bash completion in ZSH
 
-To make this work, add the following configuration in your `~/.zshrc`:
+To make this work in ZSH you need to add the following configuration in your `~/.zshrc`:
 
     autoload bashcompinit && bashcompinit
-
+    
 # Todo
 
 - [ ] Support folders with whitespaces
