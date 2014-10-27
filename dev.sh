@@ -33,11 +33,11 @@ function dev(){
 		else
 			echo "Info: Found ${projectscount} result while searching for \"${*}\":"
 			# For each result ...
-		    for project in ${results}; do
-		    	# ... display project name
+				for project in ${results}; do
+					# ... display project name
 				echo ${project}
 			done | column
-		    return 0
+				return 0
 		fi
 
 	# No arguments => display projects
@@ -62,19 +62,19 @@ function dev(){
 		else
 			echo "Info: ${projectscount} available projects:"
 			# For each result ...
-		    for project in ${projects}; do
-		    	# ... display project name
+				for project in ${projects}; do
+					# ... display project name
 				echo ${project}
 			done | column
-		    return 0
+				return 0
 		fi
 	fi
 }
 
 _dev()
 {
-    case ${COMP_CWORD} in
-    1)
+		case ${COMP_CWORD} in
+		1)
 		# Backup $IFS, adjust to support whitespaces
 		OLDIFS=$IFS IFS=$(echo -en "\n\b")
 		local projects
@@ -83,10 +83,10 @@ _dev()
 		COMPREPLY=( $( compgen -W "${projects}" -- ${cur} ) )
 		# Restore $IFS
 		IFS=$OLDIFS
-        ;;
-    *)
-        COMPREPLY=()
-        ;;
-    esac
+				;;
+		*)
+				COMPREPLY=()
+				;;
+		esac
 }
 complete -F _dev dev
