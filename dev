@@ -12,7 +12,7 @@ function dev(){
 	if [ ${#} -ne 0 ]; then
 		# Arguments given => search for term
 		# Store results in variable for later use
-		results=$(find ${projectspath}/ -name \*${*}\* -type d -maxdepth 1 -exec basename {} \;)
+		results=$(find ${projectspath} -mindepth 1 -iname \*${*}\* -type d -maxdepth 1 -exec basename {} \;)
 
 		# Check if variable is not empty
 		if [[ $results == "" ]]; then
