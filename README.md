@@ -8,14 +8,17 @@ I built this script because my development folder, that contains all my dev proj
 
 # Installation
 
-    git clone git://github.com/frdmn/dev-sh.git /usr/local/src/dev-sh
+    git clone git://github.com/frdmn/dev-search.git /usr/local/src/dev-search
 
     # if you use Bash shell
     echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.bashrc
-    echo ". /usr/local/src/dev-sh/dev.sh" >> ~/.bashrc
+    echo ". /usr/local/src/dev-search/dev" >> ~/.bashrc
+    echo ". /usr/local/src/dev-search/bash_completion.d/dev" >> ~/.bashrc
+    
     # or if you use ZSH
     echo 'export devsearch_projectspath="${HOME}/Dropbox/Share/Development"' >> ~/.zshrc
-    echo ". /usr/local/src/dev-sh/dev.sh" >> ~/.zshrc
+    echo ". /usr/local/src/dev-search/dev" >> ~/.zshrc
+    echo ". /usr/local/src/dev-search/bash_completion.d/dev" >> ~/.zshrc
 
 # Usage
 
