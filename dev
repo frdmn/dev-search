@@ -11,6 +11,21 @@ function dev(){
 	# Check if argument (search term) is set
 	if [ ${#} -ne 0 ]; then
 		# Arguments given => search for term
+
+		# Check if "-c" option is given
+		if [[ ${*} == -c* ]]; then
+			shift
+			if [ ! -d ${projectspath}/${*} ]; then
+				echo "Info: Creating new project \"${*}\" ..."
+				mkdir ${projectspath}/${*} >/dev/null
+				cd ${projectspath}/${*}
+				return 0
+			else
+				echo "Error: Project \"${*}\" already exists."
+				return 1
+			fi
+		fi
+
 		# Store results in variable for later use
 		results=$(find ${projectspath} -mindepth 1 -iname \*${*}\* -type d -maxdepth 1 -exec basename {} \;)
 

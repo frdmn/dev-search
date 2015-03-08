@@ -26,7 +26,7 @@ You just need to edit the `$projectspath` variable on line 3 and then you are go
 
 ### List projects
 
-    $ dev  
+    > dev  
     Info: 8 available projects:
     01_projectA_one  02_projectA_two  03_projectB_one  04_projectB_two  05_projectB_three  06_projectB_four  07_projectB_five  08_projectB_six
 
@@ -45,6 +45,15 @@ And if there are multiple results, you'll get a list of those:
     > dev projectB
     Info: Found 6 result while searching for "project":
     03_projectB_one  04_projectB_two  05_projectB_three  06_projectB_four  07_projectB_five  08_projectB_six
+
+### Create new project
+
+If you want to create a new project you can pass the `-c` option:
+
+    > dev -c 09_newProject 
+    Info: Creating new project "09_newProject" ...
+    > pwd
+    /Users/username/Development/09_newProject
 
 ### Bash completion in ZSH
 
