@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function dev(){
-	projectspath=${devsearch_projectspath:-$HOME/Dropbox/Share/Development}
+	projectspath=${devsearch_projectspath:-$HOME/Development}
 	# check if foler exists
 	if [ ! -d ${projectspath} ]; then
 		echo "Error: Development folder \"${projectspath}\" doesn't exist"
