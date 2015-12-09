@@ -59,7 +59,7 @@ function dev(){
 	# No arguments => display projects
 	else
 		# Store projects in variable for later use
-		projects=$(ls -l ${projectspath} | tail -n +2 | awk '{ print $9" "$10" "$11 }')
+		projects=$(ls -l ${projectspath} | tail -n +2 | awk '{ print $9 }')
 
 		# Check if variable is not empty
 		if [[ $projects == "" ]]; then
