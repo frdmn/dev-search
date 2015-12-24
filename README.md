@@ -60,3 +60,7 @@ If you want to create a new project you can pass the `-c` option:
 To make this work in ZSH you need to add the following configuration in your `~/.zshrc`:
 
     autoload bashcompinit && bashcompinit
+
+## Version
+
+1.2.0
