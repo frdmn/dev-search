@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 _dev()
 {
     case ${COMP_CWORD} in
