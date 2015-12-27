@@ -63,4 +63,4 @@ To make this work in ZSH you need to add the following configuration in your `~/
 
 ## Version
 
-1.2.0
+1.2.1
