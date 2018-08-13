@@ -27,7 +27,7 @@ function dev(){
 		fi
 
 		# Store results in variable for later use
-		results=$(find ${projectspath} -mindepth 1 -iname \*${*}\* -type d -maxdepth 1 -exec basename {} \;)
+		results=$(find ${projectspath} -maxdepth 1 -mindepth 1 -iname \*${*}\* -type d -exec basename {} \;)
 
 		# Check if variable is not empty
 		if [[ $results == "" ]]; then
